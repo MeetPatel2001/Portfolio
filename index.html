@@ -1,0 +1,638 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	
+	<head>
+		<title>Meet Patel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="" style="text-align: center;">
+							<!--<i class="fas fa-code"></i>-->
+					<style>
+						.profile-picture {
+							display: inline-block;
+							width: 8.2vw; /* 20% of the viewport width */
+							height: 8.2vw; /* 20% of the viewport width */
+
+							border-radius: 50%; /* Make it circular */
+							overflow: hidden; /* Hide overflow */
+							position: relative; /* Positioning for absolute positioning of image */
+						}
+
+						.profile-picture img {
+							width: 100%; /* Make image fill the container */
+							height: auto; /* Maintain aspect ratio */
+							position: absolute; /* Position the image */
+							top: 50%; /* Position it vertically in the middle */
+							left: 50%; /* Position it horizontally in the middle */
+							transform: translate(-50%, -50%); /* Center the image */
+						}
+
+						a:focus {
+						outline: none;
+						border-bottom: none;
+						}
+
+						.icon-link {
+						color: #fff;
+						text-decoration: none;
+						display: inline-block;
+						padding: 5px;
+						border-radius: 5px;
+						transition: transform 0.3s ease;
+						border-bottom: none;
+						}
+
+						.icon-link i {
+							font-size: 3em; /* Increase the font size to make the icons bigger */
+						}
+						
+
+						.icon-link:hover {
+							transform: translateY(-3px);
+							box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.8); /* Adjust the glow effect */
+							color: #00ffff; /* Change the icon color on hover */
+						}
+
+						/* Add different glow colors for different icons */
+						.icon-link:hover .fa-github {
+							color: #6e5494;
+						}
+
+						.icon-link:hover .fa-linkedin {
+							color: #0077b6;
+						}
+
+						.icon-link:hover .fa-envelope {
+							color: #5DEBD7; /* Change to blue on hover */
+						}
+						
+						#about {
+						max-height: 50vw;
+						overflow-y: auto;
+						}
+
+						h3 a {
+							border-bottom: none;
+							color: white;
+							text-decoration: none;
+    						cursor: pointer;
+						}
+
+						h3 a:hover {
+						text-shadow: 0 0 20px white;
+						}
+
+						.scrollable-content {
+							max-height: 35vw; /* Adjust the height as needed */
+							overflow-y: scroll;
+							padding-right: 20px; /* Add some padding to the right for the scrollbar */
+							scrollbar-width: thin; /* Set the width of the scrollbar */
+							scrollbar-color: #ffffff #808080; /* Set the color of the scrollbar thumb and track */
+						}
+
+						/* Webkit-based browsers (Chrome, Safari, Opera) */
+						.scrollable-content::-webkit-scrollbar {
+							width: 12px; /* Width of the scrollbar */
+						}
+
+						.scrollable-content::-webkit-scrollbar-track {
+							background-color: #808080; /* Color of the scrollbar track */
+						}
+
+						.scrollable-content::-webkit-scrollbar-thumb {
+							background-color: #ffffff; /* Color of the scrollbar thumb */
+							border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+						}
+
+						.inspiration-text {
+						position: absolute; /* Position the text absolutely */
+						bottom: 8px; /* Set the distance from the bottom */
+						right: 8px; /* Set the distance from the right */
+						font-family: Arial, sans-serif;
+						font-size: 11px;
+						color: #B4B4B8; /* Set the text color */
+						z-index: 1; /* Ensure the text appears on top of other elements */
+						border-bottom: none;
+						}
+
+						a {
+							border-bottom: none;
+							color: inherit;
+						}
+						
+						@keyframes colorChange {
+						0% { text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; }
+						25% { text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue; }
+						50% { text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple; }
+						75% { text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; }
+						100% { text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange; }
+						}
+
+						nav ul li a:hover {
+						animation: colorChange 3s infinite;
+						font-weight: bold;
+						}
+
+						
+					</style>
+
+					<div class="profile-picture">
+						<img src="images/headshot.jpg" alt="Your Picture">
+					</div>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1 style="font-size: 3vw">Meet Patel</h1>
+								<p>MSBA candidate at the University of Tennessee<br/>
+								I'm passionate about using Data to solve Business Problems</p>
+							</div>
+							
+						</div>
+						<nav>
+							<ul>
+								<ul>
+								<!-- Resume  -->
+    							<li><a href="https://docs.google.com/document/d/1k23Qv19d0WdmksjsxXcjzT0Dnw35M4vA/edit?usp=sharing&ouid=107737752582235638440&rtpof=true&sd=true" target="_blank">Resume <i class="fas fa-external-link-alt"></i></a></li>
+								<li><a href="#Projects">Projects</a></li>
+								<li><a href="#about">About Me</a></li>
+								<li><a href="#Skills">Skills</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Resume 
+							<article id="Resume">
+								<h2 class="major">Resume</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#Projects">awesome Projects</a>.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+							</article> -->
+
+						<!-- Projects -->
+							<article id="Projects">
+							<h1 class="major">Projects</h1>
+							<div class="scrollable-content">
+								<h3><a href="https://github.com/MeetPatel2001/Mercedes_Benz_Capstone_Data499" target="_blank"></i>1. Mercedes-Benz <i class="fas fa-external-link-alt"></i></a></h3>
+								<span class="image main"><img src="images/Mercedes.png" alt="" style="max-width: 35%; display: block; margin: 0 auto;"></span>
+								<p>Reduce the time a Mercedes-Benz car spends on the test bench.</p>
+								<p>Mercedes-Benz has a lot of features. So, it’s impossible to optimize the testing time for a car without a powerful algorithm. 
+								There are 376 potential features a Mercedes-Benz can have according to the dataset. It includes the custom features selected by the user at the time of ordering a car.</p>
+								<span>Tools/Concepts used: Python, random forest, xgboost, neural net, and principal component analysis.</span>
+								<p>Libraries used: Pandas, Numpy, Sklearn, TensorFlow, Matplotlib and Seaborn.</p>
+								
+								<h3><a href="https://github.com/MeetPatel2001/Global_Temp_RShiny_475" target="_blank">2. Global Temperature Shiny App <i class="fas fa-external-link-alt"></i></a></h3>
+								<span class="image main"><img src="images/global_temp.png" alt="" style="max-width: 80%; display: block; margin: 0 auto; filter: brightness(1.1);"></span>
+								<p>App link- <a href="https://meetpatel.shinyapps.io/Global_Temperature/" target="_blank" style="color: #5AB2FF;">https://meetpatel.shinyapps.io/Global_Temperature/</a></p>
+								<p>Global temperature shiny app created for BAS 475's final. </p>
+								<span>Tools/Concepts used: R, R-Shiny, Time-series, Arima, ETS, STL, Simple models.</span>
+								<p>Libraries used: fpp3, plotly, ggplot2, shiny, and urca.</p>
+
+
+								<h3><a href="https://github.com/MeetPatel2001/CPSC_Applied_ML" target="_blank">3. Consumer Product Safety Commission (CPSC) <i class="fas fa-external-link-alt"></i></a></h3>
+								<span class="image main"><img src="images/cpsc.png" alt="" style="max-width: 40%; display: block; margin: 0 auto;"></span>
+								<p>Goal: Find 10 lithium ion based products to avoid manufacturing</p>
+								<p><a href="https://docs.google.com/document/d/1yCSosMJM5BPT2w5v_O45HZi6vp7kT_E--q5Ssu7QJus/edit?usp=sharing" target="_blank" style="color: #5AB2FF;">Project Design Report</a></p>
+								<p>I analyzed all 'Thermal Fire' incidents using US's CPSC data for the year 2023.</p>
+								<span>Tools/Concepts used: Python, SPSS, JASP, Orange3, PerplexityAI, and AnythingLLM</span>
+								<p>Libraries used: Pandas, Numpy, NLTK, and Matplotlib.</p>
+
+								<h3><a href="https://github.com/MeetPatel2001/House-Prices" target="_blank">4. House Prices Advanced Regression <i class="fas fa-external-link-alt"></i></a></h3>
+								<span class="image main"><img src="images/houseprices.png" alt="" style="max-width: 80%; display: block; margin: 0 auto;"> <p style="font-size: 12px;">Pic credit: Vu Anh (Unsplash)</p> </span>
+								<p>Goal: Predict the Sale Price of a House</p>
+								<p>A fun kaggle project to practice predictive models.</p>
+								<span>Tools/Concepts used: Python, random forest, regularized linear regression, and xgboost.</span>
+								<p>Libraries used: Pandas, Numpy, and Sklearn.</p>
+							</div>
+						</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<div class="scrollable-content"></div>
+								<span class="image main">
+								<span class="image main"><img src="images/about_me.JPG" alt="" style="width: 100%; height: auto; filter: brightness(1.1);" /></span>
+								</span>
+								<p>Hi, I’m Meet Patel. I'm originally from Gujarat, India. I completed my BSc. in Statistics with a Data Science 
+									minor at the University of Tennessee, Knoxville (UTK) in May 2024. Currently, 
+									I’m pursuing an MS in Business Analytics at UT. Beyond academics, my passions include playing and watching cricket, hiking, and reading (recently read a cool thriller book called Stillhouse Lake). 
+									One of my favorite hiking spots is House Mountain, conveniently close to UT’s campus. I also like to play chess for fun, 
+									and you can find me on chess.com under the username 'meetvptl'.
+								</p>
+
+								<p>P.S. The above picture is from my Spring 2024 hike on Andrews Bald Trail in the Great Smoky Mountains!</p>
+
+								<em>Thanks for visiting my website! Feel free to reach out and connect with me.</em>
+							</article>
+
+						<!-- Skills -->
+							<article id="Skills">
+							<h2 class="major">Skills</h2>
+							<div class="scrollable-content"></div>
+
+							<h3>Python<span style="float: right; width: 80%; background-color: #ddd;">
+								<div style="width: 91%; height: 20px; background-color: #4CAF50; animation: load-bar 2s ease-in-out forwards; --skill-level: 91%;"></div>
+							</span></h3>
+
+							<h3>R<span style="float: right; width: 80%; background-color: #ddd;">
+								<div style="width: 90%; height: 20px; background-color: #4CAF50; animation: load-bar 2s ease-in-out forwards; --skill-level: 90%;"></div>
+							</span></h3>
+
+							<h3>Tableau<span style="float: right; width: 80%; background-color: #ddd;">
+								<div style="width: 90%; height: 20px; background-color: #4CAF50; animation: load-bar 2s ease-in-out forwards; --skill-level: 88%;"></div>
+							</span></h3>
+
+							<h3>SQL<span style="float: right; width: 80%; background-color: #ddd;">
+								<div style="width: 85%; height: 20px; background-color: #4CAF50; animation: load-bar 2s ease-in-out forwards; --skill-level: 85%;"></div>
+							</span></h3>
+
+							<h3>ML<span style="float: right; width: 80%; background-color: #ddd;">
+								<div style="width: 84%; height: 20px; background-color: #4CAF50; animation: load-bar 2s ease-in-out forwards; --skill-level: 84%;"></div>
+							</span></h3>
+
+							<h3>Power Bi<span style="float: right; width: 80%; background-color: #ddd;">
+								<div style="width: 60%; height: 20px; background-color: #4CAF50; animation: load-bar 2s ease-in-out forwards; --skill-level: 60%;"></div>
+							</span></h3>
+
+							<h3>HTML/CSS<span style="float: right; width: 80%; background-color: #ddd;">
+								<div style="width: 35%; height: 20px; background-color: #4CAF50; animation: load-bar 2s ease-in-out forwards; --skill-level:35%;"></div>
+							</span></h3>
+							
+							</article>
+							
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					<!--<p>Feel free to connect with me</p> -->
+					<a href="mailto:mpatel71@vols.utk.edu" class="icon-link" style="margin-right: 2vw;">
+						<i class="fas fa-envelope fa-2x"></i>
+					</a>
+
+					<a href="https://github.com/MeetPatel2001" target="_blank" class="icon-link" style="margin-right: 2vw;">
+						<i class="fab fa-github fa-2x"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/meetvpatel2001/" target="_blank" class="icon-link">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</a>
+
+
+					<div class="inspiration-text">
+						Inspiration from <a href="https://github.com/AlexanderHolmes0/React_Resume?tab=readme-ov-file" target="_blank">Alex Holmes </a> 
+						& <a href="https://html5up.net" target="_blank">HTML5 UP!</a>
+					</div>
+					
+					</footer>
+					
+			</div>
+
+		<!-- BG -->
+			 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #000; /* Set the background to black */
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="background-canvas"></canvas>
+
+  <script>
+    const canvas = document.getElementById('background-canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = [];
+    const particleCount = 120;
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 3 + 1,
+        speedX: Math.random() * 3 - 1,
+        speedY: Math.random() * 3- 1,
+        color: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
+      });
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = 0; i < particleCount; i++) {
+        const particle = particles[i];
+        particle.x += particle.speedX;
+        particle.y += particle.speedY;
+
+        if (particle.x < 0 || particle.x > canvas.width) {
+          particle.speedX *= -1;
+        }
+        if (particle.y < 0 || particle.y > canvas.height) {
+          particle.speedY *= -1;
+        }
+
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, particle.radius, 0, 2 * Math.PI);
+        ctx.fillStyle = particle.color;
+        ctx.fill();
+      }
+    }
+
+    animate();
+  </script>
+</body>
+</html>
+
+			<!--<div id=""></div>-->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
