@@ -154,6 +154,18 @@
 							margin: 0;
 							overflow-y: auto;
 						}
+						#wrapper {
+            min-height: 100%; /* Ensure the wrapper fills the viewport height */
+        }
+
+        #main {
+            height: 100%; /* Ensure the main content area also fills the height */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .scrollable-content {
+            overflow-y: auto; /* Enable vertical scrolling within scrollable-content */
+        }
 
 
 					</style>
