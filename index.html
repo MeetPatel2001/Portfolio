@@ -81,10 +81,6 @@
 							color: #5DEBD7; /* Change to blue on hover */
 						}
 						
-						#about {
-						max-height: 50vw;
-						overflow-y: auto;
-						}
 
 						h3 a {
 							border-bottom: none;
@@ -96,6 +92,11 @@
 						h3 a:hover {
 						text-shadow: 0 0 20px white;
 						}
+
+						#about {
+							overflow: hidden; /* Ensure the parent does not scroll */
+						}
+
 
 						.scrollable-content {
 							max-height: 35vw; /* 35vwAdjust the height as needed */
