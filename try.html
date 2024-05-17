@@ -105,6 +105,13 @@
 							scrollbar-color: #ffffff #808080; /* Set the color of the scrollbar thumb and track */
 						}
 
+						/* Media query for phone screens */
+@media (max-width: 600px) {
+    .scrollable-content {
+        max-height: 70vh; /* Larger max height for phone screens */
+    }
+}
+
 						/* Webkit-based browsers (Chrome, Safari, Opera) */
 						.scrollable-content::-webkit-scrollbar {
 							width: 12px; /* Width of the scrollbar */
@@ -162,19 +169,17 @@
 							overflow-y: auto;
 						}
 						#wrapper {
-            min-height: 100%; /* Ensure the wrapper fills the viewport height */
-        }
+							min-height: 100%; /* Ensure the wrapper fills the viewport height */
+						}
 
-        #main {
-            height: 100%; /* Ensure the main content area also fills the height */
-            overflow-y: auto; /* Enable vertical scrolling */
-        }
+						#main {
+							height: 100%; /* Ensure the main content area also fills the height */
+							overflow-y: auto; /* Enable vertical scrolling */
+						}
 
-        .scrollable-content {
-            overflow-y: auto; /* Enable vertical scrolling within scrollable-content */
-        }
-
-
+						.scrollable-content {
+							overflow-y: auto; /* Enable vertical scrolling within scrollable-content */
+						}
 					</style>
 
 					<div class="profile-picture">
