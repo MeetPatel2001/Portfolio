@@ -98,7 +98,7 @@
 						}
 
 						.scrollable-content {
-							max-height: 35vw; /* Adjust the height as needed */
+							max-height: 35vw; /* 35vwAdjust the height as needed */
 							overflow-y: scroll;
 							padding-right: 20px; /* Add some padding to the right for the scrollbar */
 							scrollbar-width: thin; /* Set the width of the scrollbar */
@@ -121,13 +121,20 @@
 
 						.inspiration-text {
 						position: absolute; /* Position the text absolutely */
-						bottom: 8px; /* Set the distance from the bottom */
-						right: 8px; /* Set the distance from the right */
+						bottom: 2px; /* Set the distance from the bottom */
+						right: 2px; /* Set the distance from the right */
 						font-family: Arial, sans-serif;
 						font-size: 11px;
 						color: #B4B4B8; /* Set the text color */
 						z-index: 1; /* Ensure the text appears on top of other elements */
 						border-bottom: none;
+						}
+
+						/* Media query for phone screens */
+						@media (max-width: 600px) {
+							.inspiration-text {
+								font-size: 5px; /* Smaller font size for phone screens */
+							}
 						}
 
 						a {
@@ -154,8 +161,18 @@
 							margin: 0;
 							overflow-y: auto;
 						}
+						#wrapper {
+							min-height: 100%; /* Ensure the wrapper fills the viewport height */
+						}
 
+						#main {
+							height: 100%; /* Ensure the main content area also fills the height */
+							overflow-y: auto; /* Enable vertical scrolling */
+						}
 
+						.scrollable-content {
+							overflow-y: auto; /* Enable vertical scrolling within scrollable-content */
+						}
 					</style>
 
 					<div class="profile-picture">
