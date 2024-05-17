@@ -118,6 +118,17 @@
 							background-color: #ffffff; /* Color of the scrollbar thumb */
 							border-radius: 6px; /* Rounded corners of the scrollbar thumb */
 						}
+						/* Additional media query for very small screens */
+@media (max-width: 480px) {
+    .scrollable-content {
+        max-height: 60vh; /* Further increase max-height for very small screens */
+        padding-right: 5px; /* Further reduce padding */
+    }
+
+    .scrollable-content::-webkit-scrollbar {
+        width: 6px; /* Even narrower scrollbar */
+    }
+}
 
 						.inspiration-text {
 						position: absolute; /* Position the text absolutely */
