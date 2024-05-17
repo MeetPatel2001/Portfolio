@@ -98,19 +98,12 @@
 						}
 
 						.scrollable-content {
-							max-height: 35vw; /* Adjust the height as needed */
+							max-height: calc(68vh); /* 35vwAdjust the height as needed */
 							overflow-y: scroll;
 							padding-right: 20px; /* Add some padding to the right for the scrollbar */
 							scrollbar-width: thin; /* Set the width of the scrollbar */
 							scrollbar-color: #ffffff #808080; /* Set the color of the scrollbar thumb and track */
 						}
-
-						/* Media query for phone screens */
-@media (max-width: 600px) {
-    .scrollable-content {
-        max-height: 70vh; /* Larger max height for phone screens */
-    }
-}
 
 						/* Webkit-based browsers (Chrome, Safari, Opera) */
 						.scrollable-content::-webkit-scrollbar {
