@@ -182,10 +182,22 @@
 						}
 
 						@media (max-width: 600px) {
-  .scrollable-content {
-    max-height: 70vh; /* Adjust the height as needed for smaller screens */
-  }
-}
+            .scrollable-content {
+                max-height: 60vh;
+            }
+        }
+
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #main {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
 					</style>
 
 					<div class="profile-picture">
@@ -221,7 +233,7 @@
     const scrollableContents = document.querySelectorAll('.scrollable-content');
     scrollableContents.forEach(content => {
       const viewportHeight = window.innerHeight;
-      const maxHeight = viewportHeight * 0.7; // Adjust the multiplier as needed
+      const maxHeight = viewportHeight * 0.70 // Adjust the multiplier as needed
       content.style.maxHeight = `${maxHeight}px`;
     });
   }
