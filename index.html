@@ -103,27 +103,36 @@
 							overflow: hidden; /* Ensure the parent does not scroll */
 						}
 
-
 						.scrollable-content {
 							max-height: 35vw; /* 35vwAdjust the height as needed */
 							overflow-y: scroll;
 							padding-right: 20px; /* Add some padding to the right for the scrollbar */
 							scrollbar-width: thin; /* Set the width of the scrollbar */
-							scrollbar-color: #ffffff #808080; /* Set the color of the scrollbar thumb and track */
+							scrollbar-color: #ECE8DD transparent; /* Set the color of the scrollbar thumb and track */
 						}
 
 						/* Webkit-based browsers (Chrome, Safari, Opera) */
 						.scrollable-content::-webkit-scrollbar {
-							width: 12px; /* Width of the scrollbar */
+							width: 6px; /* Fixed width of the scrollbar */
 						}
 
 						.scrollable-content::-webkit-scrollbar-track {
-							background-color: #808080; /* Color of the scrollbar track */
+							background-color: transparent; /* Transparent background for the scrollbar track */
 						}
 
 						.scrollable-content::-webkit-scrollbar-thumb {
-							background-color: #ffffff; /* Color of the scrollbar thumb */
-							border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+							border-radius: 3px; /* Rounded corners of the scrollbar thumb */
+							border: 1px solid transparent; /* Transparent border to create a gap effect */
+							background-clip: padding-box; /* Ensures the border is part of the thumb */
+						}
+						
+
+						/* Styles for phone screens */
+						@media (max-width: 767px) {
+						.scrollable-content {
+							max-height: 60vh; /* 60% of the viewport height */
+							padding-right: 10px; /* 10px width padding */
+						}
 						}
 
 						.inspiration-text {
