@@ -211,11 +211,16 @@
             scrollbar-color: #ffffff #808080;
         }
 
-        @media screen and (max-width: 736px) {
-            .scrollable-content {
-                padding-right: 10px; /* Further reduce padding for very small screens */
-            }
-        }
+        
+@media screen and (max-width: 736px) {
+    article {
+        height: 70vh; /* Set height of articles to 70% of viewport height */
+    }
+    .scrollable-content {
+        padding-right: 10px; /* Reduce padding for small screens */
+        max-height: 70vh; /* Set max height of content to 70% of viewport height */
+    }
+}
 
 					</style>
 
@@ -246,22 +251,6 @@
 
 				<!-- Main -->
 					<div id="main">
-
-<script>
-  function adjustScrollableContentHeight() {
-    const scrollableContents = document.querySelectorAll('.scrollable-content');
-    scrollableContents.forEach(content => {
-      const viewportHeight = window.innerHeight;
-      const maxHeight = viewportHeight * 0.8; // Use 80% of viewport height
-      content.style.maxHeight = `${maxHeight}px`;
-    });
-  }
-
-  window.addEventListener('resize', adjustScrollableContentHeight);
-  window.addEventListener('load', adjustScrollableContentHeight);
-</script>
-
-
 						<!-- Resume 
 							<article id="Resume">
 								<h2 class="major">Resume</h2>
