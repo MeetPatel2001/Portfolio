@@ -162,33 +162,7 @@
 						font-weight: bold;
 						}
 
-						/*scrollable*/
-						html, body {
-							height: 100%;
-							margin: 0;
-							overflow-y: auto;
-						}
-						#wrapper {
-							min-height: 100%; /* Ensure the wrapper fills the viewport height */
-						}
-
-						#main {
-							height: 100%; /* Ensure the main content area also fills the height */
-							overflow-y: auto; /* Enable vertical scrolling */
-						}
-
-						.scrollable-content {
-							overflow-y: auto; /* Enable vertical scrolling within scrollable-content */
-						}
-
-
-						@media (max-width: 600px) {
-  .scrollable-content {
-    max-height: 10vw; /* Adjust the height as needed for smaller screens */
-	width: 10vw; /* Make the content full width on smaller screens */
-  }
-}
-
+						
 					</style>
 
 					<div class="profile-picture">
@@ -268,9 +242,11 @@
 							<article id="about">
 								<h2 class="major">About Me</h2>
 								<div class="scrollable-content">
+									<div style="text-align: center;">
 									<span class="image main">
-									<span class="image main"><img src="images/about_me.JPG" alt="" style="width: 100%; height: auto; filter: brightness(1.1);" /></span>
+									<span class="image main"><img src="images/about_me.JPG" alt="" style="width: 90%; height: 85%; filter: brightness(1.1); display: inline-block;" /></span>
 									</span>
+									</div>
 									<p>Hi, I’m Meet Patel. I'm originally from Gujarat, India. I completed my BSc. in Statistics with a Data Science 
 										minor at the University of Tennessee, Knoxville (UTK) in May 2024. Currently, 
 										I’m pursuing an MS in Business Analytics at UT. Beyond academics, my passions include playing and watching cricket, hiking, and reading (recently read a cool thriller book called Stillhouse Lake). 
