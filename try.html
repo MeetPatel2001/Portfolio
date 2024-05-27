@@ -181,36 +181,41 @@
 							overflow-y: auto; /* Enable vertical scrolling within scrollable-content */
 						}
 
-						/* Scrollable content general styling */
-/* General wrapper and main section styling */
-#wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
-#main {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 10px; /* Reduce padding to utilize more space on small screens */
-}
+						#wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-/* Scrollable content styling */
-.scrollable-content {
-    max-height: 80vh; /* Increase height for better use of space */
-    overflow-y: auto;
-    padding-right: 10px; /* Reduce padding for small screens */
-    scrollbar-width: thin;
-    scrollbar-color: #ffffff #808080;
-}
+        #main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            padding: 10px; /* Adjust padding for better space utilization on small screens */
+        }
 
-/* Adjustments for smaller screens */
-@media (max-width: 600px) {
-    scrollable-content {
-        max-height: 75vh; /* Adjust max height for small screens */
-    }
-}
+        article {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px; /* Add margin between articles */
+        }
 
+        .scrollable-content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding-right: 20px; /* Reduce padding for better use of space */
+            scrollbar-width: thin;
+            scrollbar-color: #ffffff #808080;
+        }
+
+        @media screen and (max-width: 736px) {
+            .scrollable-content {
+                padding-right: 10px; /* Further reduce padding for very small screens */
+            }
+        }
 
 					</style>
 
