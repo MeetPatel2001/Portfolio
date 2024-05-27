@@ -182,10 +182,24 @@
 						}
 
 						/* Scrollable content general styling */
-.scrollable-content {
-    max-height: 70vh; /* Use viewport height to make it responsive */
+/* General wrapper and main section styling */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main {
+    flex-grow: 1;
     overflow-y: auto;
-    padding-right: 20px;
+    padding: 10px; /* Reduce padding to utilize more space on small screens */
+}
+
+/* Scrollable content styling */
+.scrollable-content {
+    max-height: 80vh; /* Increase height for better use of space */
+    overflow-y: auto;
+    padding-right: 10px; /* Reduce padding for small screens */
     scrollbar-width: thin;
     scrollbar-color: #ffffff #808080;
 }
@@ -193,9 +207,10 @@
 /* Adjustments for smaller screens */
 @media (max-width: 600px) {
     .scrollable-content {
-        max-height: 80vh; /* Adjust max height for small screens */
+        max-height: 75vh; /* Adjust max height for small screens */
     }
 }
+
 
 					</style>
 
@@ -227,12 +242,12 @@
 				<!-- Main -->
 					<div id="main">
 
-						<script>
+<script>
   function adjustScrollableContentHeight() {
     const scrollableContents = document.querySelectorAll('.scrollable-content');
     scrollableContents.forEach(content => {
       const viewportHeight = window.innerHeight;
-      const maxHeight = viewportHeight * 0.70 // Adjust the multiplier as needed
+      const maxHeight = viewportHeight * 0.8; // Use 80% of viewport height
       content.style.maxHeight = `${maxHeight}px`;
     });
   }
@@ -240,6 +255,7 @@
   window.addEventListener('resize', adjustScrollableContentHeight);
   window.addEventListener('load', adjustScrollableContentHeight);
 </script>
+
 
 						<!-- Resume 
 							<article id="Resume">
