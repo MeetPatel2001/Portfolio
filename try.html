@@ -121,12 +121,11 @@
 						}
 
 						.scrollable-content::-webkit-scrollbar-thumb {
-							border-radius: 3px; /* Rounded corners of the scrollbar thumb */
-							border: 1px solid transparent; /* Transparent border to create a gap effect */
-							background-clip: padding-box; /* Ensures the border is part of the thumb */
-						}
-
-
+	background-color: #ECE8DD; /* Color of the scrollbar thumb */
+	border-radius: 3px; /* Rounded corners of the scrollbar thumb */
+	border: 1px solid transparent; /* Transparent border to create a gap effect */
+	background-clip: content-box; /* Ensures the border is part of the thumb */
+}
 						/* Styles for phone screens */
 						@media (max-width: 767px) {
 						.scrollable-content {
