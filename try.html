@@ -23,6 +23,18 @@
 						<div class="" style="text-align: center;">
 							<!--<i class="fas fa-code"></i>-->
 					<style>
+						/* Make the main container scrollable */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevent body from scrolling */
+        }
+
+        #wrapper {
+            overflow-y: auto;
+            height: 100vh; /* Full viewport height */
+        }
+		
 						.profile-picture {
 							display: inline-block;
 							width: 130px; /* 8.2vw 20% of the viewport width */
@@ -134,22 +146,11 @@
 						.scrollable-content {
 							max-height: 10vh; /* 60% of the viewport height */
 							overflow-y: scroll;
-							padding-right: 20px; /* 10px width padding */
-							padding-top: 10vh; /* Add padding to the top */
-    						padding-bottom: 10vh; /* Add padding to the bottom */
+							padding-right: 20vw; /* 10px width padding */
+							padding-left: 20vw; /* 10px width padding */
+							padding-top: 30vh; /* Add padding to the top */
+    						padding-bottom: 30vh; /* Add padding to the bottom */
 						}
-
-						.icon-link {
-        padding: 10px; /* Increase padding for better touch targets on mobile */
-    }
-    .icon-link i {
-        font-size: 2em; /* Adjust icon size for smaller screens */
-    }
-    .social-icons {
-        display: flex;
-        justify-content: center; /* Center the icons */
-        flex-wrap: wrap; /* Allow the icons to wrap to the next line if necessary */
-    }
 						}
 
 						.inspiration-text {
@@ -566,7 +567,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<div class="social-icons">
 					<!--<p>Feel free to connect with me</p> -->
 					<a href="mailto:mpatel71@vols.utk.edu" class="icon-link" style="margin-right: 2vw;">
 						<i class="fas fa-envelope fa-2x"></i>
@@ -584,7 +584,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						Inspiration from <a href="https://github.com/AlexanderHolmes0/React_Resume?tab=readme-ov-file" target="_blank">Alex Holmes </a> 
 						& <a href="https://html5up.net" target="_blank">HTML5 UP!</a>
 					</div>
-					</div>
+					
 					</footer>
 					
 			</div>
