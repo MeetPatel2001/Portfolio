@@ -154,14 +154,27 @@
 						}
 
 						html, body {
-							height: 100%;
-							margin: 0;
-							overflow: auto; /* Prevent body from scrolling */
+							overflow-x: hidden;
 						}
-
-						#wrapper {
-							overflow-y: auto;
-							height: 100vh; /* Full viewport height */
+						.content {
+							padding: 10px;
+						}
+						.profile-picture {
+							width: 100px;
+							height: 100px;
+						}
+						.icon-link i {
+							font-size: 2em;
+						}
+						h1 {
+							font-size: 30px;
+						}
+						/* Reduce text size for Skills section */
+						#Skills h2.major {
+							font-size: 24px; /* Adjust as necessary */
+						}
+						#Skills h3 {
+							font-size: 16px; /* Adjust as necessary */
 						}
 
 						}
