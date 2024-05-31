@@ -23,18 +23,19 @@
 						<div class="" style="text-align: center;">
 							<!--<i class="fas fa-code"></i>-->
 					<style>
-						/* Make the main container scrollable */
-        html, body {
-            height: 100%;
-            margin: 0;
-            overflow: hidden; /* Prevent body from scrolling */
-        }
 
-        #wrapper {
-            overflow-y: auto;
-            height: 100vh; /* Full viewport height */
-        }
-		
+						/* Make the main container scrollable */
+						html, body {
+							height: 100%;
+							margin: 0;
+							overflow: auto; /* Prevent body from scrolling */
+						}
+
+						#wrapper {
+							overflow-y: auto;
+							height: 100vh; /* Full viewport height */
+						}
+
 						.profile-picture {
 							display: inline-block;
 							width: 130px; /* 8.2vw 20% of the viewport width */
@@ -142,12 +143,12 @@
 
 
 						/* Styles for phone screens */
-						@media (max-width: 767px) {
+						@media (max-width: 600px) {
 						.scrollable-content {
 							max-height: 10vh; /* 60% of the viewport height */
 							overflow-y: scroll;
-							padding-right: 20vw; /* 10px width padding */
-							padding-left: 20vw; /* 10px width padding */
+							padding-right: 30vw; /* 10px width padding */
+							padding-left: 30vw; /* 10px width padding */
 							padding-top: 30vh; /* Add padding to the top */
     						padding-bottom: 30vh; /* Add padding to the bottom */
 						}
