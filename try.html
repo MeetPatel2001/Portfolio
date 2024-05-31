@@ -104,15 +104,13 @@
 						}
 
 						.scrollable-content {
-							
-
 							max-height: 35vw; /* Adjust the height as needed */
-    overflow-y: scroll;
-    padding-right: 20px; /* Add some padding to the right for the scrollbar */
-    padding-top: 5vh; /* Add padding to the top */
-    padding-bottom: 5vh; /* Add padding to the bottom */
-    scrollbar-width: thin; /* Set the width of the scrollbar */
-    scrollbar-color: #ECE8DD transparent; /* Set the color of the scrollbar thumb and track */
+							overflow-y: scroll;
+							padding-right: 20px; /* Add some padding to the right for the scrollbar */
+							padding-top: 5vh; /* Add padding to the top */
+							padding-bottom: 5vh; /* Add padding to the bottom */
+							scrollbar-width: thin; /* Set the width of the scrollbar */
+							scrollbar-color: #ECE8DD transparent; /* Set the color of the scrollbar thumb and track */
 						}
 
 						/* Webkit-based browsers (Chrome, Safari, Opera) */
@@ -140,6 +138,18 @@
 							padding-top: 10vh; /* Add padding to the top */
     						padding-bottom: 10vh; /* Add padding to the bottom */
 						}
+
+						.icon-link {
+        padding: 10px; /* Increase padding for better touch targets on mobile */
+    }
+    .icon-link i {
+        font-size: 2em; /* Adjust icon size for smaller screens */
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Center the icons */
+        flex-wrap: wrap; /* Allow the icons to wrap to the next line if necessary */
+    }
 						}
 
 						.inspiration-text {
@@ -556,6 +566,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
+						<div class="social-icons">
 					<!--<p>Feel free to connect with me</p> -->
 					<a href="mailto:mpatel71@vols.utk.edu" class="icon-link" style="margin-right: 2vw;">
 						<i class="fas fa-envelope fa-2x"></i>
@@ -573,7 +584,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						Inspiration from <a href="https://github.com/AlexanderHolmes0/React_Resume?tab=readme-ov-file" target="_blank">Alex Holmes </a> 
 						& <a href="https://html5up.net" target="_blank">HTML5 UP!</a>
 					</div>
-					
+					</div>
 					</footer>
 					
 			</div>
